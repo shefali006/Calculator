@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Calculator</title>
+
+    <!--FAVICON-->
+    <link rel="icon" href="Images/calcFav.jpg">
+
+    <!--CSS FILE-->
+    <link rel="stylesheet" href="calc.css">
+
+</head>
+<body>
+    <header>
+        <h2>CALCULATOR</h2>
+    </header>
+    <!--CALCULATOR-->
+    <div id="calculator">
+        <input type="text"  id="output"> 
+        <span><button value="AC" class="spclBtn" onclick="Clear()">AC</button></span>
+        <span><button value="DEL" class="spclBtn" onclick="del()">DEL</button></span> 
+
+        <span><button value="9" class="btn " onclick="display('9')">9</button></span>
+        <span><button value="8" class="btn " onclick="display('8')">8</button></span>
+        <span><button value="7" class="btn " onclick="display('7')">7</button></span>
+        <span><button value="*" class="btn " onclick="display('*')">*</button></span>
+
+        <span><button value="6" class="btn " onclick="display('6')">6</button></span>
+        <span><button value="5" class="btn " onclick="display('5')">5</button></span>
+        <span><button value="4" class="btn " onclick="display('4')">4</button></span>
+        <span><button value="-" class="btn " onclick="display('-')">-</button></span>
+
+        <span><button value="3" class="btn " onclick="display('3')">3</button></span>
+        <span><button value="2" class="btn " onclick="display('2')">2</button></span>
+        <span><button value="1" class="btn " onclick="display('1')">1</button></span>
+        <span><button value="+" class="btn " onclick="display('+')">+</button></span>
+
+        <span><button value="0" class="btn " onclick="display('0')">0</button></span>
+        <span><button value="." class="btn " onclick="display('.')">.</button></span>
+        <span><button value="=" class="btn " onclick="calculate()">=</button></span>
+        <span><button value="/" class="btn " onclick="display('/')">/</button></span>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
